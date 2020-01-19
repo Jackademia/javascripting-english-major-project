@@ -1,9 +1,21 @@
-let userInput;
-userInput = prompt("what do you want to have for dinner", "Type your answer here." );
-if(userInput.toLowerCase() === "burrito" )
+
+for(let i = 1; i<4; i=i+1)
 {
-  $("#response").html("Brilliant choice!");
-}else
-{
-  $("#response").html("Don't you want a burrito?");
+  if(i===1)
+  {
+    $("#response").html(i + " is odd.");
+  }else
+  {
+    if(i%2 === 0)
+    {
+      $("#response").append("<br/>" + i +" is even.");
+    }else {
+      {
+        $("#response").append("<br/>" + i +" is odd.");
+      }
+    }
+
+  }
+
+
 }
